@@ -1,8 +1,13 @@
+const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: "./src/index",
+  output: {
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "build"),
+  },
   devServer: {
     port: 3000,
   },

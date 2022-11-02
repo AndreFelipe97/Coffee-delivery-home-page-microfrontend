@@ -12,21 +12,25 @@ export function Home() {
         <span className='subtitle'>Com o coffee Delivery você recebeu seu café onde estiver, a qualquer hora</span>
 
         <div className='service-description'>
-          <div className='service-item'>
-            <span className='icon cart-icon'><FiShoppingCart /></span>
-            <span className='description'>Compra simples e segura</span>
+          <div className='column-service'>
+            <div className='service-item'>
+              <span className='cart-icon'><FiShoppingCart /></span>
+              <span className='description'>Compra simples e segura</span>
+            </div>
+            <div className='service-item'>
+              <span className='clock-icon'><FiClock /></span>
+              <span className='description'>Entrega rápida e rastreada</span>
+            </div>
           </div>
-          <div className='service-item'>
-            <span className='icon cart-package'><FiPackage /></span>
-            <span className='description'>Entrega rápida e rastreada</span>
-          </div>
-          <div className='service-item'>
-            <span className='icon cart-clock'><FiClock /></span>
-            <span className='description'>Embalagem mantém o café intacto</span>
-          </div>
-          <div className='service-item'>
-            <span className='icon cart-coffe'><FiCoffee /></span>
-            <span className='description'>O café fresquinho até você</span>
+          <div className='column-service'>
+            <div className='service-item'>
+              <span className='package-icon'><FiPackage /></span>
+              <span className='description'>Embalagem mantém o café intacto</span>
+            </div>
+            <div className='service-item'>
+              <span className='coffe-icon'><FiCoffee /></span>
+              <span className='description'>O café fresquinho até você</span>
+            </div>
           </div>
         </div>
       </div>

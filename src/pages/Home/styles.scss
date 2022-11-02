@@ -28,15 +28,22 @@
   .service-description {
     margin-top: 6.6rem;
     display: flex;
-    justify-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
     column-gap: 4rem;
     row-gap: 2rem;
 
+    .column-service {
+      display: flex;
+      gap: 2rem;
+      flex-direction: column;
+    }
+
     .service-item {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: flex-start;
+      align-items: flex-start;
       gap: 1.2rem;
 
       .cart-icon {
@@ -50,7 +57,7 @@
         border-radius: 1000px;
       }
 
-      .cart-package {
+      .package-icon {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -61,7 +68,7 @@
         border-radius: 1000px;
       }
 
-      .cart-clock {
+      .clock-icon {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -72,7 +79,7 @@
         border-radius: 1000px;
       }
 
-      .cart-coffe {
+      .coffe-icon {
         display: flex;
         justify-content: center;
         align-items: center;

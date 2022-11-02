@@ -30,7 +30,7 @@ export function Home() {
           </div>
         </div>
       </div>
-      <img src={banner} alt="Imagem de um copo de café com alguns graõs ao lado" />
+      <img src={banner} alt="Imagem de um copo de café com alguns graõs ao lado" data-testid="banner" />
     </div>
   );
 }

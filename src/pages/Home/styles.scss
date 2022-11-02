@@ -1,0 +1,95 @@
+.home-container {
+  display: flex;
+  margin-top: 9.4rem;
+  margin-bottom: 16rem;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    font-size: 4.8rem;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 800;
+    color: var(--text-900);
+    line-height: 6.24rem;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 2.6rem;
+    color: var(--text-600);
+    margin-top: 1.6rem;
+  }
+  
+  .service-description {
+    margin-top: 6.6rem;
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+    column-gap: 4rem;
+    row-gap: 2rem;
+
+    .service-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.2rem;
+
+      .cart-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--white);
+        background-color: var(--yellow-900);
+        height: 3.2rem;
+        width: 3.2rem;
+        border-radius: 1000px;
+      }
+
+      .cart-package {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--white);
+        background-color: var(--text-600);
+        height: 3.2rem;
+        width: 3.2rem;
+        border-radius: 1000px;
+      }
+
+      .cart-clock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--white);
+        background-color: var(--yellow-500);
+        height: 3.2rem;
+        width: 3.2rem;
+        border-radius: 1000px;
+      }
+
+      .cart-coffe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--white);
+        background-color: var(--purple-500);
+        height: 3.2rem;
+        width: 3.2rem;
+        border-radius: 1000px;
+      }
+
+      span .description {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.08rem;
+        color: var(--text-300);
+      }
+    }
+  }
+}

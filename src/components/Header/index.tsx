@@ -6,12 +6,12 @@ import './styles.scss';
 
 export function Header() {
   return (
-    <div className='header-container'>
+    <header className='header-container'>
       <img data-testid="logo" src={logo} alt="Logo do projeto" />
       <div className='info-container'>
         <span className='locale' data-testid="info-locale"><FiMapPin /> Porto Alegre, RS</span>
         <a href="#" data-testid="cart-button" className="cart"><FiShoppingCart /></a>
       </div>
-    </div>
+    </header>
   );
 }

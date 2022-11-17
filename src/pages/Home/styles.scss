@@ -12,7 +12,7 @@
     font-size: 4.8rem;
     font-family: 'Baloo 2', sans-serif;
     font-weight: 800;
-    color: var(--text-900);
+    color: var(--brown-900);
     line-height: 6.24rem;
   }
 
@@ -21,7 +21,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 2.6rem;
-    color: var(--text-600);
+    color: var(--brown-600);
     margin-top: 1.6rem;
   }
   
@@ -62,7 +62,7 @@
         justify-content: center;
         align-items: center;
         color: var(--white);
-        background-color: var(--text-600);
+        background-color: var(--brown-600);
         height: 3.2rem;
         width: 3.2rem;
         border-radius: 1000px;
@@ -95,7 +95,7 @@
         font-weight: 400;
         font-size: 1.6rem;
         line-height: 2.08rem;
-        color: var(--text-300);
+        color: var(--brown-300);
       }
     }
   }

@@ -5,9 +5,14 @@
   --yellow-100: #F1E9C9;
   --yellow-500: #DBAC2C;
   --yellow-900: #C47F17;
-  --text-300: #574f4d;
-  --text-600: #403937;
-  --text-900: #272221;
+  --background: #fafafa;
+  --white: #fff;
+  --brown-100: #8D8686;
+  --brown-300: #574f4d;
+  --brown-600: #403937;
+  --brown-900: #272221;
+  --gray-100: #F3F2F2;
+  --gray-500: #E6E5E5;
   --background: #fafafa;
   --white: #fff;
 }
@@ -24,7 +29,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  color: var(--text-300);
+  color: var(--brown-300);
   background-color: var(--background);
   -webkit-font-smoothing: antialiased;
 }

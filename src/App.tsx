@@ -1,13 +1,17 @@
+import React from 'react';
 import './App.scss';
 import { Header } from './components/Header';
 import { Home } from './pages/Home';
+
+// @ts-ignore
+import Products from 'products/App';
 
 function App() {
   return (
     <div className='container'>
       <Header />
       <Home />
-      <h1>Coffee Delivery</h1>
+      <Products />
     </div>
   );
 }

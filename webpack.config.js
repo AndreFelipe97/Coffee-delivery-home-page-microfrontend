@@ -1,12 +1,16 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
+
+const { dependencies } = require("./package.json");
 
 module.exports = {
-  entry: "./src/index",
+  entry: "./src/index.ts",
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "build"),
+    publicPath: 'http://localhost:3000/'
   },
   devServer: {
     port: 3000,
@@ -14,7 +18,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx|ts|tsx)?$/,
+        test: /\.(js|ts|tsx)?$/,
         exclude: /node_modules/,
         use: [
           {
@@ -37,6 +41,26 @@ module.exports = {
     ],
   },
   plugins: [
+    new ModuleFederationPlugin({
+      name: "host",
+      library: { type: 'var', name: 'host' },
+      remotes: {
+        products: 'products',
+      },
+      shared: {
+        ...dependencies,
+        react: {
+          eager: true,
+          singleton: true,
+          requiredVersion: dependencies["react"],
+        },
+        "react-dom": {
+          eager: true,
+          singleton: true,
+          requiredVersion: dependencies["react-dom"],
+        },
+      },
+    }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),
@@ -45,7 +69,7 @@ module.exports = {
     }),
   ],
   resolve: {
-    extensions: [".js", ".jsx", ".ts", ".tsx"],
+    extensions: [".js", ".ts", ".tsx"],
   },
   target: "web",
 };

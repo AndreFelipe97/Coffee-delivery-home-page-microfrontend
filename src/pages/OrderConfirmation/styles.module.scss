@@ -1,0 +1,144 @@
+.order-confirmation-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-delivery {
+  h1 {
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 800;
+    font-size: 3.2rem;
+    line-height: 4.16rem;
+    color: var(--yellow-900)
+  }
+
+  span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+}
+
+.delivery-datail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.2rem;
+
+  padding: 4rem;
+  margin-top: 4rem;
+
+  width: 52.6rem;
+
+  border: 1px solid var(--yellow-500);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 36px;
+  border-bottom-left-radius: 36px;
+  border-bottom-right-radius: 6px;
+  
+
+  .address {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.2rem;
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 3.2rem;
+      width: 3.2rem;
+      background-color: var(--purple-500);
+      border-radius: 1000px;
+
+      svg {
+        color: var(--white);
+      }
+    }
+
+    p {
+      font-size: 1.6rem;
+
+      span {
+        font-size: 1.6rem;
+        color: var(--brown-300);
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.delivery-time {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.2rem;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.08rem;
+    }
+
+    span.info {
+      font-weight: 700;
+      font-size: 1.6rem;
+    }
+  }
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.2rem;
+    width: 3.2rem;
+    background-color: var(--yellow-500);
+    border-radius: 1000px;
+
+    svg {
+      color: var(--white);
+    }
+  }
+}
+
+.payment-method {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.2rem;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.08rem;
+    }
+
+    span.info {
+      font-weight: 700;
+      font-size: 1.6rem;
+    }
+  }
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.2rem;
+    width: 3.2rem;
+    background-color: var(--yellow-900);
+    border-radius: 1000px;
+
+    svg {
+      color: var(--white);
+    }
+  }
+}

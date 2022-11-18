@@ -1,0 +1,134 @@
+.checkout-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 3.2rem;
+
+  @media only screen and (max-width: 89.9375em)  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.title-card {
+  font-size: 1.8rem;
+  line-height: 2.34rem;
+  font-weight: 700;
+  font-family: 'Baloo 2', sans-serif;
+  color: var(--brown-600);
+  margin-bottom: 1.5rem;
+}
+
+.address-card {
+  width: 64rem;
+  background-color: var(--gray-100);
+  padding: 4rem;
+  border-radius: 6px;
+
+  p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:0.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.08rem;
+    margin-bottom: 0.2rem;
+    color: var(--brown-600);
+
+    svg {
+      height: 2.2rem;
+      width: 2.2rem;
+      color: var(--yellow-900);
+    }
+  }
+  
+  span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.82rem;
+    margin-left: 3rem;
+    color: var(--brown-300);
+  }
+}
+
+.form-address {
+  display: flex;
+  row-gap: 1.6rem;
+  flex-direction: column;
+  margin-top: 3.2rem;
+
+  div {
+    display: flex;
+    row-gap: 1.2rem;
+    column-gap: 1.2rem;
+  }
+}
+
+.cart-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2.4rem;
+  height: 100%;
+  width: 44.8rem;
+  padding: 4rem;
+  background-color: var(--gray-100);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 44px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 44px;
+
+  @media only screen and (max-width: 89.9375em)  {
+    min-width: 64rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.payment-container {
+  width: 64rem;
+  background-color: var(--gray-100);
+  padding: 4rem;
+  border-radius: 6px;
+  margin-top: 1.2rem;
+
+  p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:0.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.08rem;
+    margin-bottom: 0.2rem;
+    color: var(--brown-600);
+    
+    svg {
+      width: 2.2rem;
+      height: 2.2rem;
+      color: var(--purple-500);
+    }
+  }
+
+  span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.82rem;
+    color: var(--brown-300);
+    margin-left: 3rem;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.2rem;
+  }
+}

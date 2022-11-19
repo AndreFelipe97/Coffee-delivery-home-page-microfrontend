@@ -8,19 +8,24 @@ import {
 import styles from './styles.module.scss'
 
 interface CartItemProps {
+  id: number;
   imagePath: string;
   title: string;
   price: number;
+  amount: number
+  removeProduct: () => void;
 }
 
-export function CartItem({imagePath, title, price}: CartItemProps) {
+export function CartItem({id, imagePath, title, price, amount, removeProduct}: CartItemProps) {
   const [priceFormat, setPriceFormat] = useState<string>('')
+  const [amountProduct, setAmountProduct] = useState<number>(0);
   
   useEffect(() => {
     let numberFormat = new Intl.NumberFormat(
       'pt-BR', { style: 'currency', currency: 'BRL' })
       .format(price)
     setPriceFormat(numberFormat)
+    setAmountProduct(amount)
   }, [])
 
   return (
@@ -30,11 +35,15 @@ export function CartItem({imagePath, title, price}: CartItemProps) {
         <span className={styles['product-title']}>{title}</span>
         <div className={styles['amount-item']}>
           <div className={styles['counter-item']}>
-            <button><FiMinus /></button>
-            <span>1</span>
-            <button><FiPlus /></button>
+            QTD. <span>{amountProduct}</span>
           </div>
-          <button className={styles['remove-button']}><FiTrash /> remover</button>
+          <button
+            type="button"
+            className={styles['remove-button']}
+            onClick={removeProduct}
+          >
+            <FiTrash /> remover
+          </button>
         </div>
       </div>
       <span className={styles['price-item']}>{priceFormat}</span>

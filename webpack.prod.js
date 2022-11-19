@@ -9,13 +9,10 @@ module.exports = {
   entry: "./src/index.ts",
   output: {
     filename: "bundle.js",
-    path: path.resolve(__dirname, "build"),
+    path: path.resolve(__dirname, "html"),
     publicPath: 'http://localhost:3000/'
   },
-  mode: 'development',
-  devServer: {
-    port: 3000,
-  },
+  mode: 'production',
   module: {
     rules: [
       {
